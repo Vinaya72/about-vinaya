@@ -40,17 +40,17 @@ export const myProjects = [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: './assets/react.svg',
       },
       {
         id: 2,
         name: 'Flask',
-        path: '/assets/flask.png',
+        path: './assets/flask.png',
       },
       {
         id: 3,
         name: 'Azure',
-        path: '/assets/azure.png',
+        path: './assets/azure.png',
       },
     ],
   },
@@ -60,24 +60,24 @@ export const myProjects = [
     subdesc:
       'The usability of this app connects users and local restaurants. The app takes into account weird food combinations and dietary requirements and makes informed suggestions.',
     href: 'https://github.com/Vinaya72/easy-food',
-    texture: '/textures/project/project2.png',
-    logo: '/assets/android.png',
+    texture: './textures/project/project2.png',
+    logo: './assets/android.png',
     logoStyle: {
       backgroundColor: '#13202F',
       border: '0.2px solid #17293E',
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
-    spotlight: '/assets/spotlight2.png',
+    spotlight: './assets/spotlight2.png',
     tags: [
       {
         id: 1,
         name: 'Flutter',
-        path: '/assets/flutter.png',
+        path: './assets/flutter.png',
       },
       {
         id: 2,
         name: 'Firebase',
-        path: 'assets/firebase.png',
+        path: './assets/firebase.png',
       },
     ],
   },
@@ -87,8 +87,8 @@ export const myProjects = [
     subdesc:
       'Additionally, this study explores various Transformer architectures to evaluate their impact on classification accuracy, aiming to advance NLP model performance in sentiment analysis.',
     href: '/',
-    texture: '/textures/project/lstm.png',
-    logo: '/assets/project-logo3.png',
+    texture: './textures/project/lstm.png',
+    logo: './assets/project-logo3.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -96,22 +96,22 @@ export const myProjects = [
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
-    spotlight: '/assets/spotlight3.png',
+    spotlight: './assets/spotlight3.png',
     tags: [
       {
         id: 1,
         name: 'Pandas',
-        path: '/assets/pandas.png',
+        path: './assets/pandas.png',
       },
       {
         id: 2,
         name: 'Numpy',
-        path: 'assets/numpy.png',
+        path: './assets/numpy.png',
       },
       {
         id: 3,
         name: 'Pytorch',
-        path: '/assets/pytorch.png',
+        path: './assets/pytorch.png',
       },
     ],
   },
@@ -121,24 +121,24 @@ export const myProjects = [
     subdesc:
       'Upon finding a suitable match in items the user is looking for, they will be able to contact the lister to arrange the details of their exchange or rental. ',
     href: 'https://github.com/Vinaya72/NTUShare',
-    texture: '/textures/project/project4.png',
-    logo: '/assets/project-logo5.png',
+    texture: './textures/project/project4.png',
+    logo: './assets/project-logo5.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
       boxShadow: '0px 0px 60px 0px #635BFF4D',
     },
-    spotlight: '/assets/spotlight5.png',
+    spotlight: './assets/spotlight5.png',
     tags: [
       {
         id: 1,
         name: 'React.js',
-        path: '/assets/react.svg',
+        path: './assets/react.svg',
       },
       {
         id: 2,
         name: 'Firebase',
-        path: 'assets/firebase.png',
+        path: './assets/firebase.png',
       },
     ],
   },
@@ -162,7 +162,7 @@ export const workExperiences = [
     pos: 'Software Developer',
     duration: 'May 2024 - Jul 2024',
     title: "Developed a custom web app for internal use that evaluates job candidates by processing resumes and previous interview feedback by leveraging NLP techniques and Azure cloud services to enhance hiring process efficiency.",
-    icon: '/assets/wissen.png',
+    icon: './assets/wissen.png',
   },
   {
     id: 2,
@@ -170,7 +170,7 @@ export const workExperiences = [
     pos: 'Data Solutions Developer',
     duration: 'Jul 2023 - Dec 2023',
     title: "Developed tailored data management solutions that met the specific business needs of two major charitable organizations. Analyzed and visualized six months of clients’ organizational data using SQL, aiding in strategic decision making",
-    icon: '/assets/octopus8.png',
+    icon: './assets/octopus8.png',
     animation: 'clapping',
   },
   {
@@ -179,7 +179,7 @@ export const workExperiences = [
     pos: 'Frontend Developer',
     duration: 'Sep 2021 - Nov 2021',
     title: "Developed a responsive, user-centric frontend for an ecommerce platform, optimizing the landing, checkout, product list, and description pages to enhance user experience and engagement.",
-    icon: '/assets/aakanksha.png',
+    icon: './assets/aakanksha.png',
     animation: 'salute',
   },
 ];
