@@ -9,10 +9,10 @@ import { useGSAP } from '@gsap/react';
 
 const DemoComputer = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('/models/computer.glb');
+  const { nodes, materials, animations } = useGLTF('models/computer.glb');
   const { actions } = useAnimations(animations, group);
 
-  const txt = useTexture(props.texture ? props.texture : '/textures/project/project1.png');
+  const txt = useTexture(props.texture ? props.texture : 'textures/project/project1.png');
   txt.flipY = false; // Ensure it's set immediately
   txt.needsUpdate = true; // Force update the texture  
 
@@ -105,6 +105,6 @@ const DemoComputer = (props) => {
   );
 };
 
-useGLTF.preload('/models/computer.glb');
+useGLTF.preload('models/computer.glb');
 
 export default DemoComputer;

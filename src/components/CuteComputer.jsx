@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function CuteComputer(props) {
   const group = useRef()
-  const { nodes, materials} = useGLTF('/models/scene.gltf')
+  const { nodes, materials} = useGLTF('models/scene.gltf')
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -183,4 +183,4 @@ export function CuteComputer(props) {
   )
 }
 
-useGLTF.preload('/models/scene.gltf')
+useGLTF.preload('models/scene.gltf')
