@@ -1,6 +1,7 @@
 import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import { useMediaQuery } from 'react-responsive';
 
 import {Developer} from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
@@ -8,6 +9,7 @@ import { workExperiences } from '../constants/index.js';
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
+  const isMobile = useMediaQuery({ maxWidth: 666 });
 
   return (
     <section className="c-space my-20" id="work">
@@ -23,7 +25,7 @@ const WorkExperience = () => {
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
 
               <Suspense fallback={<CanvasLoader />}>
-                <Developer position-y={-1} scale={0.02} animationName={animationName} />
+                <Developer position-y={-1} scale={isMobile ? 0.03: 0.02} animationName={animationName} />
               </Suspense>
             </Canvas>
           </div>

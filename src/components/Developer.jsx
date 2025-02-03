@@ -1,11 +1,14 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useMediaQuery } from 'react-responsive';
 
 export function Developer(props) {
   const { nodes, materials } = useGLTF('models/scene_2.gltf')
+  const isMobile = useMediaQuery({ maxWidth: 666 });
+
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, -0.4]}>
+      <group rotation={isMobile?[-Math.PI / 2.3, 0, -0.6]: [-Math.PI / 2, 0, -0.4]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[40.574, 19.542, 8.922]} rotation={[-Math.PI / 2, 0, 0]}>
             <mesh
